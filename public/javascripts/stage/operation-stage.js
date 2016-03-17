@@ -5,9 +5,7 @@ var operationStag = {
 };
 
 function addToOperationStag(key, value) {
-    if (value === null) {
-        callback(operationStag);
-    } else {
+    if (value !== null) {
         switch(key) {
             case 'number': {
                 if (operationStag.pre === null) {
